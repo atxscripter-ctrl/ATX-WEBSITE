@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "python",
+  "steps": {
+    "install": {
+      "commands": ["pip install --no-cache-dir -r requirements.txt"]
+    }
+  },
+  "deploy": {
+    "startCommand": "gunicorn main:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120"
+  }
+}

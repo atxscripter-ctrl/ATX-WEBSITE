@@ -1,0 +1,6 @@
+flask==3.0
+werkzeug==3.0
+itsdangerous==2.1
+gunicorn==21.2
+pyotp==2.9.0
+cryptography==42.0.5
